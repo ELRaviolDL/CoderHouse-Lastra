@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Realize encargos de Impresiones 3D a pedido">
+    <meta name="keywords" content="IMPRESION, 3D, ENCARGO, PEDIDO, PERSONALIZADO, COMISION, PLA, FDM, PLASTICO, TECNICO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Impresiones 3D6 - Encargos</title>
+</head>
+<body>
+    <!--El header luego será cambiado por una imagen -->
+    <header class="banner">
+        <h1 class="titulo "> IMPRESIONES 3D6</h1>
+        <!-- Esto es un pequeño menú de navegación-->
+        <nav class="antilink topNav ">
+            <a href="catalogo.html" class="antilink">Catalogo</a>
+            <a href="direccion.html" class="antilink">Dirección</a>
+            <a href="index.html" class="antilink">
+                <img alt="Hogar" href="index.html" src="img/LogoHome.png" width="80" height="80">
+            </a>
+            <a href="encargo.html" class="antilink">Encargos</a>
+            <a href="contacto.html" class="antilink">Contacto</a>
+        </nav>
+    </header>
+   <div>
+    <h2 class="titulo" >Realize un encargo</h2>
+    </div>
+    <!--se tiene un formulario para completar encargos personalizados -->
+    <div>
+        <form id="app-login" action="process.php" method="POST" enctype="text/plain">
+            <fieldset>
+                <legend>Información de Encargo</legend>
+                <div>
+                    <label for="user-name">Correo:</label>
+                    <input name="user-name" type="email" placeholder="Inserte su email" required autofocus>
+                    <label for="check">Acepto que utilicen mi e mail para contactarse conmigo</label>
+                    <input name="check" type="checkbox">
+                </div>
+                <label for="title">Encargo</label>
+                <div>
+                    <select id="title" name="title">
+                        <option value="" selected>Seleccione el tipo de encargo</option>
+                        <option value="Terreno">Terreno</option>
+                        <option value="Figura">Figura</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Especifique medidas y requerimientos:</label>
+                    <textarea cols="50" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                    <input name="reset" type="reset" value="Resetear Valores">
+                    <input name="enviar" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <h4>Copyright 2021 Augusto Lastra</h4>
+    </footer>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

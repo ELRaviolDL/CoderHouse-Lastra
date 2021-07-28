@@ -1,0 +1,35 @@
+@import "base/fuentes";
+@import "base/colores";
+@import "base/mixins";
+
+html {
+    font-size: 16px;
+}
+
+.txtP {
+    @include tipografiaBase($deco, 1rem, normal, $azul, null, null);
+}
+.btn{
+    font-family: $deco;
+}
+.btn__clear{
+    color: rgb(196, 47, 47);
+}
+.txtP__nav{
+    @include tipografiaBase($deco, 2rem, normal, $azul, null, null);
+}
+.listaCat{
+    list-style-position: outside;
+    font-family: $deco;
+}
+.listaCat__fig{
+    color: $azul;
+    list-style-type: square;
+}
+@for $i from 1 to 3 {
+    .letrasAuto-#{$i} { 
+        font-size: 1rem* $i; 
+        font-family: $deco;
+        color: $azul;
+    }
+}
