@@ -45,4 +45,64 @@ html {
   font-family: "Poiret One", sans-serif;
   color: #3e4970;
 }
+
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas: ". a a ." ". a a .";
+  }
+  .item1 {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas: ". a a ." ". b b .";
+  }
+  .item1b {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+  }
+  .item2 {
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas: ". a a . ." ". c b . .";
+  }
+  .item1ind {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+  }
+  .item2ind {
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+  }
+  .item3ind {
+    grid-area: c;
+    align-self: center;
+    justify-self: center;
+  }
+}
 /*# sourceMappingURL=estilosSass.css.map */

@@ -15,46 +15,41 @@
     <title>Impresiones 3D6</title>
 </head>
 <body>
-    <!--El header luego será cambiado por una imagen -->
-    <header class="banner">
-        <h1 class="titulo "> IMPRESIONES 3D6</h1>
+    <header >
         <!-- Esto es un pequeño menú de navegación-->
-        <nav class="antilink topNav txtP__nav ">
-            <a href="catalogo.html" class="antilink">Catalogo</a>
-            <a href="direccion.html" class="antilink">Dirección</a>
-            <a href="index.html" class="antilink">
-                <img alt="Hogar" href="index.html" src="img/LogoHome.png" width="80" height="80">
-            </a>
-            <a href="encargo.html" class="antilink">Encargos</a>
-            <a href="contacto.html" class="antilink">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3e4970;">
+            <a class="navbar-brand" href="index.html"><img alt="Hogar" href="index.html" src="img/LogoHome.png" width="80" height="80">Impresiones 3D6</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="catalogo.html">Catalogo</a>
+                    <a class="nav-item nav-link active" href="direccion.html">Dirección</a>
+                    <a class="nav-item nav-link active" href="contacto.html">Contacto</a>
+                    <a class="nav-item nav-link active" href="encargo.html">Encargos</a>
+                </div>
+            </div>
         </nav>
     </header>
-<div class="paddeo grillaBootstrap">
-    <div >
-        <!-- Lista del desafío
-        <ul>
-            <li><a href="/direccion.html">Dirección</a></li>
-            <li><a href="/encargo.html">Encargos</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="/catalogo.html">Catalogo</a>
-                <ul>
-                    <li><a href="/figuras.html"> Figuras</a></li>
-                    <li><a href="/terreno.html">Terreno</a></li>
-                </ul>
-            </li>
-        </ul>  
-        -->
+    
+<div class="wrapper3">
+    <div class="item1ind" >
+        <h1 class="titulo">BIENVENIDO</h1>
+    </div>
+    <div class="item3ind" >
         <!-- iframe para poner novedades desde youtube-->
         <iframe width="320" height="215" src="https://www.youtube.com/embed/yEULbuGqKiw" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
-    <div class="centrar">
+    <div class="item2ind" >
         <!-- esto envia a una subsección del catalogo
             <h1><a href="figuras.html" class="slide-fwd-center deco"> Figuras</a></h1>
             <h1><a href="terreno.html" class="slide-fwd-center deco">Terreno</a></h1>-->
-        <div class="flipCard">
+        <div class="item1ind flipCard">
             <div class="flipCardInner">
                 <div class="flipCardFront">
                     <h1><a class="deco antilink" > Figuras</a></h1>
@@ -64,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="flipCard">
+        <div class="item2ind flipCard">
             <div class="flipCardInner">
                 <div class="flipCardFront">
                     <h1><a class="deco antilink"> Terreno</a></h1>
@@ -76,47 +71,46 @@
         </div>
     </div>
      <!--en esta parte planeo poner un carrito junto a un buscador para el catalogo -->
-     <div >
-        <input type="text" placeholder="Buscar en el catalogo">
-        <h1 class="deco">Tu carrito</h1>
-        <div class="carroCompras">
-            <ul>
-                <li><a>
-                    <img alt="Shadowseer" src="img/Shadowseer.jpg"
-                    width="50" height="50">
-                </a>
-                <a>Shadowseer 26u$</a>
-                <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
-                </li>
-                <li><a>
-                    <img alt="Shadowseer" src="img/Shadowseer.jpg"
-                    width="50" height="50">
-                </a>
-                <a>Shadowseer 26u$</a>
-                <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
-                </li>
-                <li><a>
-                    <img alt="Shadowseer" src="img/Shadowseer.jpg"
-                    width="50" height="50">
-                </a>
-                <a>Shadowseer 26u$</a>
-                <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
-                </li>
-                <li><a>
-                    <img alt="Shadowseer" src="img/Shadowseer.jpg"
-                    width="50" height="50">
-                </a>
-                <a>Shadowseer 26u$</a>
-                <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
-                </li>
-                <li><a>
-                    <img alt="Shadowseer" src="img/Shadowseer.jpg"
-                    width="50" height="50">
-                </a>
-                <a>Shadowseer 26u$</a>
-                </li>
-            </ul>
-        </div>
+</div>
+<div >
+    <h1 class="cataCarro deco">Tu carrito</h1>
+    <div class="cataCarro carroCompras">
+        <ul>
+            <li><a>
+                <img alt="Shadowseer" src="img/Shadowseer.jpg"
+                width="50" height="50">
+            </a>
+            <a>Shadowseer 26u$</a>
+            <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
+            </li>
+            <li><a>
+                <img alt="Shadowseer" src="img/Shadowseer.jpg"
+                width="50" height="50">
+            </a>
+            <a>Shadowseer 26u$</a>
+            <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
+            </li>
+            <li><a>
+                <img alt="Shadowseer" src="img/Shadowseer.jpg"
+                width="50" height="50">
+            </a>
+            <a>Shadowseer 26u$</a>
+            <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
+            </li>
+            <li><a>
+                <img alt="Shadowseer" src="img/Shadowseer.jpg"
+                width="50" height="50">
+            </a>
+            <a>Shadowseer 26u$</a>
+            <a><button type="button" class="btn__clear " >quitar del carrito</button></a>
+            </li>
+            <li><a>
+                <img alt="Shadowseer" src="img/Shadowseer.jpg"
+                width="50" height="50">
+            </a>
+            <a>Shadowseer 26u$</a>
+            </li>
+        </ul>
     </div>
 </div>
     <div class="cataCarro">
